@@ -28,6 +28,7 @@
     "bss": "1.6.4",
     "codemirror": "5.62.3",
     "csso": "4.2.0",
+    "esbuild": "^0.16.7",
     "lz-string": "1.4.4",
     "mithril": "2.0.3",
     "object-inspect": "1.6.0",
