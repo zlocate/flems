@@ -11,6 +11,8 @@
     "build:runtime": "node scripts/runtime",
     "build:standalone": "node scripts/standalone",
     "dev": "node scripts/wright",
+    "serve": "npx http-server -o \"./dist\"",
+    "start": "npm run build && npm run serve",
     "prepare": "npm run build"
   },
   "keywords": [
@@ -29,6 +31,7 @@
     "codemirror": "5.62.3",
     "csso": "4.2.0",
     "esbuild": "^0.16.7",
+    "http-server": "^14.1.1",
     "lz-string": "1.4.4",
     "mithril": "2.0.3",
     "object-inspect": "1.6.0",

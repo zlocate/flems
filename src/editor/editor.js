@@ -1,26 +1,27 @@
-import m from 'mithril'
 import b from 'bss'
+import m from 'mithril'
 import { endsWith, ext } from '../utils'
 
 import CodeMirror from 'codemirror'
-import 'codemirror/mode/javascript/javascript'
-import 'codemirror/mode/coffeescript/coffeescript'
-import 'codemirror/mode/css/css'
-import 'codemirror/mode/htmlmixed/htmlmixed'
-import 'codemirror/keymap/sublime'
 import 'codemirror/addon/comment/comment'
+import 'codemirror/addon/dialog/dialog.js'
 import 'codemirror/addon/edit/closebrackets'
 import 'codemirror/addon/edit/closetag'
 import 'codemirror/addon/edit/matchbrackets'
-import 'codemirror/addon/selection/active-line'
-import 'codemirror/addon/dialog/dialog.js'
-import 'codemirror/addon/search/search.js'
-import 'codemirror/addon/search/searchcursor.js'
+import 'codemirror/addon/fold/brace-fold.js'
+import 'codemirror/addon/fold/comment-fold.js'
 import 'codemirror/addon/fold/foldcode.js'
 import 'codemirror/addon/fold/foldgutter.js'
-import 'codemirror/addon/fold/brace-fold.js'
 import 'codemirror/addon/fold/xml-fold.js'
-import 'codemirror/addon/fold/comment-fold.js'
+import 'codemirror/addon/search/search.js'
+import 'codemirror/addon/search/searchcursor.js'
+import 'codemirror/addon/selection/active-line'
+import 'codemirror/keymap/sublime'
+import 'codemirror/mode/coffeescript/coffeescript'
+import 'codemirror/mode/css/css'
+import 'codemirror/mode/htmlmixed/htmlmixed'
+import 'codemirror/mode/javascript/javascript'
+import 'codemirror/mode/python/python'
 
 import logoIcon from '../icons/logo.svg'
 
@@ -30,6 +31,9 @@ const modes = {
   document: {
     name: 'htmlmixed',
     lineWrapping: true
+  },
+  python: {
+    name: 'text/x-python'
   },
   script: {
     name: 'javascript',

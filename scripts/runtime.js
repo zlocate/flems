@@ -26,4 +26,5 @@ module.exports = rollup.rollup({
     '\t' + runtime.code + '//# sourceURL=runtime.js',
     '</script>'
   ].join('\n'))
+  fs.copyFileSync('./examples/python.html', 'dist/index.html')
 })

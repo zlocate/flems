@@ -1,6 +1,6 @@
 import lz from 'lz-string'
-import { ext, urlRegex, findFile } from './utils'
 import compilers from './compilers'
+import { ext, findFile, urlRegex } from './utils'
 
 const extMap = {
   html      : 'document',
@@ -14,7 +14,8 @@ const extMap = {
   styl      : 'style',
   less      : 'style',
   scss      : 'style',
-  sass      : 'style'
+  sass      : 'style',
+  py        : 'python'
 }
 
 export const defaults = () => ({
